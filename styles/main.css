@@ -1,0 +1,106 @@
+@import url(reset.css);
+html, body {
+    height: 100%;
+    width: 100%; 
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@media (max-width: 1480px) {
+    .container {
+        padding: 0 40px; 
+    } 
+}
+@media (max-width: 780px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+.res-hidden {
+    /* display: none; */
+    /* width: 100%;
+    height: 100%;
+    top: 100px;*/
+}
+
+.res-active {
+    
+}
+
+.main-title {
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: 32px;
+    color: black;
+}
+
+.choose {
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 30px;
+}
+
+@media (max-width: 980px) {
+    .choose {
+        width: 100%;
+    }
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 480px) {
+    .btn-wrap {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    background-color: darkgrey;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.result-block {
+    border: solid 5px darkgrey;
+    border-radius: 20px;
+    position: relative;
+}
+
+.result-wrap {
+    padding: 20px 20px;
+}
+
+.result-elems {
+    margin-bottom: 10px;
+}
+.result-items {
+    margin-right: 10px;
+}
+
+.data-users ,
+.data-cities {
+    cursor: pointer;
+}
+.data-users:hover ,
+.data-cities:hover {
+    color: lightskyblue;
+}
